@@ -15,7 +15,7 @@ netcat-openbsd
 ```bash
 docker run --rm -it --network=host unfor19/net-tools netstat -tupln | grep LISTEN
 
-docker run --rm -it --network=host unfor19/net-tools nmap -p 22 -n 127.0.0.1
+docker run --rm -it --network=host unfor19/net-tools nmap -p 8080 -n localhost
 
 docker run --rm -it --network=host unfor19/net-tools nc -w 1 -v google.com 443
 ```
